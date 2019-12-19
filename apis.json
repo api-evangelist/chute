@@ -1,0 +1,80 @@
+{
+    "name": "Chute",
+    "description": "End-to-end solution for visual marketing -  Uncover consumer & competitive insights, manage UGC & publish content to websites, social, ads &",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1254-chute.jpg",
+    "tags": [
+        "api provider",
+        "have api",
+        "images",
+        "photos",
+        "social",
+        "videos"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/chute\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Chute Media",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1254-chute.jpg",
+            "humanURL": "http:\/\/www.getchute.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/chute-media-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Base",
+            "url": "http:\/\/api.getchute.com"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/blog.getchute.com\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/chute"
+        },
+        {
+            "type": "Developers",
+            "url": "http:\/\/www.getchute.com\/developers\/reference\/"
+        },
+        {
+            "type": "Email",
+            "url": "hello@getchute.com"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/chute"
+        },
+        {
+            "type": "Privacy",
+            "url": "http:\/\/www.getchute.com\/who-we-are\/about\/privacy\/"
+        },
+        {
+            "type": "Terms Of Service",
+            "url": "http:\/\/www.getchute.com\/who-we-are\/about\/terms\/"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/getchute"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.getchute.com\/"
+        },
+        {
+            "type": "Youtube",
+            "url": "http:\/\/www.youtube.com\/user\/getchut"
+        }
+    ]
+}
