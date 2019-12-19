@@ -1,0 +1,16 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v2",
+        "title": "Chute Media",
+        "description": "The Chute API enables you to add media capture, management, metadata and publishing to any app or site.",
+        "termsOfService": "http:\/\/www.getchute.com\/who-we-are\/about\/terms\/"
+    },
+    "servers": [
+        "httpapi.getchute.com\/v2\/"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": []
+    }
+}
