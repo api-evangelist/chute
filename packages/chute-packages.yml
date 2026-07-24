@@ -1,0 +1,49 @@
+generated: '2026-07-20'
+method: searched
+source: https://rubygems.org/gems/chute
+status: abandoned
+note: >-
+  Chute (getchute.com) is defunct — the API host, developer portal and Apiary
+  documentation no longer resolve, and the github.com/chute organization was
+  deleted (the login was later recycled by an unrelated user account created
+  2018-12-21). The client libraries below are the only surviving first-party
+  artifacts. They are recorded here as a historical registry record only: both
+  are unmaintained, their source repositories return 404, and they target an API
+  endpoint that is no longer reachable. No SDKs pointer is emitted in apis.yml
+  because there is no usable SDK surface.
+packages:
+- language: ruby
+  registry: rubygems
+  name: chute
+  url: https://rubygems.org/gems/chute
+  install: gem install chute
+  official: true
+  latest_version: 2.2.2
+  latest_release: '2017-07-17'
+  version_count: 14
+  downloads: 51300
+  description: Ruby SDK for the Chute API
+  homepage: https://github.com/chute/chute-ruby
+  homepage_status: 404
+  documented_at: http://docs.chute.apiary.io
+  documented_at_status: 502
+  maintained: false
+- language: javascript
+  registry: npm
+  name: chute
+  url: https://www.npmjs.com/package/chute
+  install: npm install chute
+  official: true
+  latest_version: 0.1.5
+  first_published: '2012-06-13'
+  description: API client for Chute platform.
+  repository: https://github.com/chute/chute-node
+  repository_status: 404
+  maintained: false
+unrelated_namespace_collisions:
+- registry: pypi
+  name: chute
+  url: https://pypi.org/project/chute/
+  note: >-
+    Unrelated — "A simple tool for Discrete Event Simulation in Python" by
+    Ryan J. O'Neil. Not a Chute (getchute.com) package.

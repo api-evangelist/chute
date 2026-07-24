@@ -1,8 +1,28 @@
 aid: chute
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/chute.png
 name: Chute
-description: Chute is a company surfaced as a portfolio company of a16z, battery-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Chute was a visual marketing automation platform (getchute.com) that helped
+  brands discover, collect, rights-manage and publish consumer and
+  user-generated visual content. Its product line spanned visual insights,
+  digital asset management and content publishing, and it exposed a public REST
+  API documented on Apiary (docs.chute.apiary.io) with first-party Ruby and
+  Node.js client libraries. The company is defunct: the canonical domain no
+  longer serves a site, the API and developer hosts do not resolve, the Apiary
+  documentation returns 502, and the github.com/chute organization has been
+  deleted. Only the abandoned package-registry entries survive. Retained in the
+  API Evangelist network as a historical record of a former API provider.
 url: https://raw.githubusercontent.com/api-evangelist/chute/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,15 +30,64 @@ x-backed-by:
 - a16z
 - battery-ventures
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: defunct-provider
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+x-status: defunct
+x-defunct:
+  former_domain: getchute.com
+  former_category: Visual marketing automation / user-generated content
+  last_archived_site: https://web.archive.org/web/20160301000000/http://getchute.com/
+  last_sdk_release: '2017-07-17'
+x-enrichment-probe:
+  date: '2026-07-20'
+  finding: >-
+    Re-probed and confirmed defunct. getchute.com is still delegated to AWS Route
+    53 nameservers but publishes no A record, so neither the apex nor any
+    api./developer./docs./www. subdomain resolves. The historical Apiary
+    documentation host returns 502 and the github.com/chute organization is gone
+    (the login was recycled by an unrelated user account created 2018-12-21, and
+    chute-ruby / chute-node both 404). chuteapp.com resolves but is an Atom
+    domain-for-sale listing, and the PyPI "chute" package is an unrelated
+    discrete-event-simulation library. The only genuine surviving first-party
+    artifacts are the abandoned RubyGems and npm client libraries, captured in
+    packages/chute-packages.yml. No OpenAPI, well-known, MCP, webhook or
+    security surface exists to search, derive or probe. Nothing was fabricated.
+  probed:
+  - {url: 'https://getchute.com/', result: dns-no-a-record}
+  - {url: 'https://api.getchute.com/', result: dns-no-a-record}
+  - {url: 'https://developer.getchute.com/', result: dns-no-a-record}
+  - {url: 'https://docs.getchute.com/', result: dns-no-a-record}
+  - {url: 'https://www.getchute.com/', result: dns-no-a-record}
+  - {url: 'http://docs.chute.apiary.io', result: 502}
+  - {url: 'https://github.com/chute', result: 200-recycled-unrelated-user}
+  - {url: 'https://github.com/chute/chute-ruby', result: 404}
+  - {url: 'https://github.com/chute/chute-node', result: 404}
+  - {url: 'https://chuteapp.com/', result: 200-domain-for-sale}
+  - {url: 'https://rubygems.org/gems/chute', result: 200-abandoned-2017}
+  - {url: 'https://www.npmjs.com/package/chute', result: 200-abandoned}
+  - {url: 'https://pypi.org/project/chute/', result: 200-unrelated-package}
 tags:
 - Company
+- Defunct
+- Visual Marketing
+- User Generated Content
+- Digital Asset Management
+- Media
+- Marketing
 apis: []
+common:
+- type: Packages
+  name: Client Libraries (historical)
+  url: packages/chute-packages.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
